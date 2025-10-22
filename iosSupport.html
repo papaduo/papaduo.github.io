@@ -31,6 +31,12 @@
             border-radius: 20px;
             box-shadow: 0 15px 50px rgba(0, 0, 150, 0.1);
             overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         header {
@@ -205,7 +211,7 @@
                 <div class="contact-box">
                     <h3><i class="fas fa-envelope"></i> 技术支持邮箱</h3>
                     <p>请将您的问题发送至以下邮箱，我们的团队会尽快回复：</p>
-                    <a href="matheusmatheustortb41388@gmail.com" class="email-link">
+                    <a href="mailto:matheusmatheustortb41388@gmail.com" class="email-link">
                         matheusmatheustortb41388@gmail.com
                     </a>
                 </div>
@@ -224,7 +230,7 @@
                 <div class="contact-box">
                     <h3><i class="fas fa-envelope"></i> Support Email</h3>
                     <p>Please send your questions to the following email address. Our team will respond as soon as possible:</p>
-                    <a href="matheusmatheustortb41388@gmail.com" class="email-link">
+                    <a href="mailto:matheusmatheustortb41388@gmail.com" class="email-link">
                         matheusmatheustortb41388@gmail.com
                     </a>
                 </div>
@@ -239,7 +245,6 @@
     </div>
 
     <script>
-        // 简单的交互动画
         document.addEventListener('DOMContentLoaded', function() {
             const contactBoxes = document.querySelectorAll('.contact-box');
             
