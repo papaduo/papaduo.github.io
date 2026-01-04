@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS App技术支持</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0, 0, 150, 0.1);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a6cf7 0%, #3a56e6 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo i {
+            font-size: 40px;
+            color: #4a6cf7;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+            color: #3a56e6;
+        }
+        
+        .section-title i {
+            margin-right: 12px;
+            background: #eef3ff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-box {
+            background: #f0f5ff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border-left: 4px solid #4a6cf7;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .contact-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(74, 108, 247, 0.15);
+        }
+        
+        .contact-box h3 {
+            margin-bottom: 15px;
+            color: #3a56e6;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-box h3 i {
+            margin-right: 10px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #4a6cf7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(74, 108, 247, 0.3);
+        }
+        
+        .email-link:hover {
+            background: #3a56e6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(74, 108, 247, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #f8f9ff;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px 20px;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-headset"></i>
+                </div>
+            </div>
+            <h1>iOS App技术支持</h1>
+            <p class="subtitle">我们随时为您提供帮助和解决方案</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-hands-helping"></i>
+                    <h2>中文支持</h2>
+                </div>
+                <p>感谢使用我们的应用！</p>
+                <p>如果您在使用我们的产品时遇到任何问题，请发邮件与我们联系，我们将24小时为您服务！</p>
+                
+                <div class="contact-box">
+                    <h3><i class="fas fa-envelope"></i> 技术支持邮箱</h3>
+                    <p>请将您的问题发送至以下邮箱，我们的团队会尽快回复：</p>
+                    <a href="mailto:hasdfbugbjsd@icloud.com" class="email-link">
+                        hasdfbugbjsd@icloud.com
+                    </a>
+                </div>
+                
+                <p>再次感谢您选择并使用我们的应用程序！</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-globe"></i>
+                    <h2>English Support</h2>
+                </div>
+                <p>Thank you for using our app!</p>
+                <p>If you encounter any issues while using our product, please email us. We provide 24/7 support!</p>
+                
+                <div class="contact-box">
+                    <h3><i class="fas fa-envelope"></i> Support Email</h3>
+                    <p>Please send your questions to the following email address. Our team will respond as soon as possible:</p>
+                    <a href="mailto:hasdfbugbjsd@icloud.com" class="email-link">
+                        hasdfbugbjsd@icloud.com
+                    </a>
+                </div>
+                
+                <p>Thank you again for choosing and using our application!</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 应用技术支持中心 | 感谢您的信任与支持</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactBoxes = document.querySelectorAll('.contact-box');
+            
+            // 初始化设置
+            contactBoxes.forEach(box => {
+                box.style.opacity = '0';
+                box.style.transform = 'translateY(20px)';
+                box.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            // 添加动画效果
+            setTimeout(() => {
+                contactBoxes.forEach((box, index) => {
+                    setTimeout(() => {
+                        box.style.opacity = '1';
+                        box.style.transform = 'translateY(0)';
+                    }, 200 * index);
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
